@@ -13,12 +13,19 @@
 
 h1,
 h2,
+h3,
 p,
-button {
+button,
+summary,
+label {
   font-family: Manrope, sans-serif;
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 100%;
+}
+
+.title_section {
+  font-size: 18px;
 }
 
 /* header */
@@ -40,7 +47,7 @@ li {
   font-family: Manrope, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: -3%;
+  letter-spacing: -1px;
   line-height: 100%;
   color: #121212;
 }
@@ -67,8 +74,7 @@ h1 {
 }
 
 #head_bg {
-   width: 100%; 
-  /* height: 590px; */ 
+  width: 100%;
   object-fit: cover;
 }
 
@@ -83,10 +89,6 @@ h1 {
 }
 
 /* about us */
-
-#title_about {
-  font-size: 18px;
-}
 
 #text_about {
   font-size: 45px;
@@ -103,4 +105,118 @@ h1 {
   font-size: 20px;
   color: white;
   cursor: pointer;
+}
+
+/* projects */
+
+#projects {
+  margin-top: 150px;
+}
+
+.project_card {
+  margin: 30px 0;
+}
+
+.title_card {
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.picture_card {
+  width: 100%;
+  object-fit: cover;
+}
+
+summary {
+  cursor: pointer;
+  color: #ad1818;
+  list-style: none;
+  font-size: 20px;
+}
+
+.projects_info {
+  font-size: 18px;
+  width: 70%;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+#see_all_prj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 153px;
+  color: #ad1818;
+  font-size: 30px;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 100px 0;
+}
+
+#see_all_prj:hover {
+  background-color: #ad1818;
+  color: white;
+  transition: 0.3s;
+}
+
+#show_projects {
+  display: none;
+}
+
+.hidden_projects {
+  display: none;
+}
+
+#show_projects:checked ~ .hidden_projects {
+  display: block;
+}
+
+/* services */
+
+#services_section {
+  background-color: #121212;
+}
+
+#title_serv {
+  color: white;
+  margin-bottom: 34px;
+  padding-top: 150px;
+}
+
+.service_card {
+  margin-bottom: 60px;
+}
+
+.img_service {
+  width: 100%;
+  object-fit: cover;
+}
+
+.service_info {
+  color: white;
+  margin-top: 16px;
+  font-size: 30px;
+}
+
+#down_bg {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 90px;
+}
+
+#down_wrapper {
+  position: relative;
+}
+
+#down_info {
+  position: absolute;
+  left: 125px;
+  bottom: 60px;
+  color: white;
+  font-size: 30px;
+  width: 22%;
+  line-height: 1.5;
 }

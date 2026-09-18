@@ -34,7 +34,7 @@
     <main>
       <div class="container">
         <div id="about_us_wrap">
-          <h2 id="title_about">О НАС</h2>
+          <h2 class="title_section">О НАС</h2>
           <p id="text_about">
             Студия основана в 2011 году. Полностью отдаемся проектированию и
             реализации интерьеров. К нам обращаются за уютом, индивидуальными
@@ -42,6 +42,152 @@
             каждого интерьера, вплоть до каждой детали — нацелены на результат.
           </p>
           <button id="button_see_services">Посмотреть услуги</button>
+        </div>
+
+        <div id="projects">
+          <h2>проекты</h2>
+          <div class="project_card">
+            <img
+              class="picture_card"
+              src="./assets/pictures/project_1.jpg"
+              alt="card"
+            />
+            <h3 class="title_card">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2026</h3>
+
+            <details>
+              <summary>Подробнее →</summary>
+              <p class="projects_info">
+                Просторный семейный интерьер, в котором современная эстетика
+                сочетается с функциональностью и комфортом. Продуманная
+                планировка позволяет организовать отдельные зоны для отдыха,
+                работы и общения. Натуральные фактуры и спокойная цветовая
+                палитра создают ощущение тепла и гармонии. Каждая деталь
+                интерьера работает на единое и цельное пространство.
+              </p>
+            </details>
+          </div>
+
+          <div class="project_card">
+            <img
+              class="picture_card"
+              src="./assets/pictures/project_2.jpg"
+              alt="card"
+            />
+            <h3 class="title_card">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2026</h3>
+
+            <details>
+              <summary>Подробнее →</summary>
+              <p class="projects_info">
+                Сдержанный интерьер с акцентом на свет, простоту и естественные
+                материалы. Мы создали пространство, которое легко адаптируется к
+                повседневному ритму жизни и не перегружено лишними деталями.
+                Лаконичная мебель и выразительные фактуры добавляют интерьеру
+                характер. Особое внимание уделено световым сценариям и
+                визуальной лёгкости пространства.
+              </p>
+            </details>
+          </div>
+
+          <div class="project_card">
+            <img
+              class="picture_card"
+              src="./assets/pictures/project_3.jpg"
+              alt="card"
+            />
+            <h3 class="title_card">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2025</h3>
+
+            <details>
+              <summary>Подробнее →</summary>
+              <p class="projects_info">
+                Интерьер построен на сочетании природных оттенков, мягких фактур
+                и выразительных акцентов. Основная задача проекта заключалась в
+                создании комфортного пространства с индивидуальным характером.
+                Функциональные решения органично интегрированы в общую
+                концепцию, сохраняя ощущение свободы и воздуха. В результате
+                получился спокойный и современный интерьер для жизни.
+              </p>
+            </details>
+          </div>
+
+          <input type="checkbox" id="show_projects" />
+
+          <div class="hidden_projects">
+            <!-- здесь ещё 2-3 project_card -->
+             <div class="project_card">
+            <img
+              class="picture_card"
+              src="./assets/pictures/project_1.jpg"
+              alt="card"
+            />
+            <h3 class="title_card">ЖК ЗАРЕЧНОЕ — 94 М² — 2025</h3>
+
+            <details>
+              <summary>Подробнее →</summary>
+              <p class="projects_info">
+                Интерьер построен на сочетании природных оттенков, мягких фактур
+                и выразительных акцентов. Основная задача проекта заключалась в
+                создании комфортного пространства с индивидуальным характером.
+                Функциональные решения органично интегрированы в общую
+                концепцию, сохраняя ощущение свободы и воздуха. В результате
+                получился спокойный и современный интерьер для жизни.
+              </p>
+            </details>
+          </div>
+
+          <div class="project_card">
+            <img
+              class="picture_card"
+              src="./assets/pictures/project_2.jpg"
+              alt="card"
+            />
+            <h3 class="title_card">ЖК ЗАГОРСКОЕ — 94 М² — 2025</h3>
+
+            <details>
+              <summary>Подробнее →</summary>
+              <p class="projects_info">
+                Интерьер построен на сочетании природных оттенков, мягких фактур
+                и выразительных акцентов. Основная задача проекта заключалась в
+                создании комфортного пространства с индивидуальным характером.
+                Функциональные решения органично интегрированы в общую
+                концепцию, сохраняя ощущение свободы и воздуха. В результате
+                получился спокойный и современный интерьер для жизни.
+              </p>
+            </details>
+          </div>
+          </div>
+
+          <label for="show_projects" id="see_all_prj">Смотреть все проекты</label>
+        </div>
+
+        
+      </div>
+
+      <div id="services_section">
+        <div class="container">
+          <h3 id="title_serv">УСЛУГИ</h3>
+          <div class="service_card">
+            <img class="img_service" src="./assets/pictures/service_1.jpg" alt="img">
+            <p class="service_info">Планировочное решение — от 2500₽/м²</p>
+          </div>
+          <div class="service_card">
+            <img class="img_service" src="./assets/pictures/service_2.jpg" alt="img">
+            <p class="service_info">Дизайн-проект — от 3000₽/м²</p>
+          </div>
+          <div class="service_card">
+            <img class="img_service" src="./assets/pictures/service_3.jpg" alt="img">
+            <p class="service_info">Авторский надзор — от 30 000₽ в месяц</p>
+          </div>
+          <div class="service_card">
+            <img class="img_service" src="./assets/pictures/service_4.jpg" alt="img">
+            <p class="service_info">Комплектация — 5% от стоимости спецификации</p>
+          </div>
+        </div>
+
+        <div id="down_wrapper">
+        <img id="down_bg" src="./assets/pictures/down_bg.jpg" alt="down_bg">
+        <div class="container">
+          <p id="down_info">Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж</p>
+        </div>
         </div>
       </div>
     </main>
