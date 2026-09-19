@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +19,7 @@ h1,
 h2,
 h3,
 p,
+a,
 button,
 summary,
 label {
@@ -22,6 +27,14 @@ label {
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 .title_section {
@@ -42,22 +55,18 @@ label {
   justify-content: space-between;
 }
 
-li {
-  list-style: none;
-  font-family: Manrope, sans-serif;
+.menu_item {
+  text-decoration: none;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: -1px;
-  line-height: 100%;
   color: #121212;
+  transition: 0.3s;
 }
 
-li:hover {
+.menu_item:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 8px;
-  transition: 0.3s;
-  cursor: pointer;
 }
 
 #header_intro {
@@ -69,13 +78,14 @@ h1 {
   font-size: 60px;
   line-height: 60px;
   color: #121212;
-  width: 62%;
+  width: 87%;
   margin-bottom: 30px;
 }
 
 #head_bg {
   width: 100%;
   object-fit: cover;
+  height: 500px;
 }
 
 #head_info {
@@ -98,13 +108,17 @@ h1 {
 }
 
 #button_see_services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   width: 255px;
   height: 67px;
   background-color: #ad1818;
   border-radius: 5px;
   font-size: 20px;
+  text-decoration: none;
   color: white;
-  cursor: pointer;
 }
 
 /* projects */
@@ -154,12 +168,13 @@ summary {
   border-radius: 5px;
   cursor: pointer;
   margin: 100px 0;
+
+  transition: 0.3s;
 }
 
 #see_all_prj:hover {
   background-color: #ad1818;
   color: white;
-  transition: 0.3s;
 }
 
 #show_projects {
@@ -204,6 +219,7 @@ summary {
 #down_bg {
   width: 100%;
   object-fit: cover;
+  height: 717px;
   margin-top: 90px;
 }
 
@@ -219,4 +235,70 @@ summary {
   font-size: 30px;
   width: 22%;
   line-height: 1.5;
+}
+
+/* contacts */
+
+#contacts {
+  margin: 150px 0 160px;
+}
+
+#title_contacts:before {
+  content: "";
+  display: block;
+  margin-bottom: 12px;
+  margin-left: -2px;
+  background-image: url("./assets/pictures/icon.png");
+  width: 24px;
+  height: 24px;
+}
+
+.contact_link {
+  display: block;
+  margin: 32px 0;
+  font-size: 60px;
+  text-decoration: none;
+  color: #121212;
+  transition: 0.3s;
+}
+
+.contact_link:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+}
+
+/* footer */
+
+footer {
+  background-color: #121212;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+#footer_menu {
+  padding-top: 60px;
+  margin-bottom: 87px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer_menu_item {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer_menu_item:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+#footer_info {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
